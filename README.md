@@ -1,6 +1,6 @@
 # PHP Class Model for the EasyMVC Framework
 
- This is the Class Model which is user by EasyMVC.
+ This is the Class Model which is used by EasyMVC.
  
 ## Installation
 Install the package using composer.
