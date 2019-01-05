@@ -6,14 +6,25 @@ namespace EasyMVC\Model;
  * Class Repository
  *
  * @author      Rudy Mas <rudy.mas@rmsoft.be>
- * @copyright   2018, rmsoft.be. (http://www.rmsoft.be/)
+ * @copyright   2018-2019, rmsoft.be. (http://www.rmsoft.be/)
  * @license     https://opensource.org/licenses/GPL-3.0 GNU General Public License, version 3 (GPL-3.0)
- * @version     0.1.0.2
+ * @version     1.0.0.3
  * @package     EasyMVC\Model
  */
 class Model
 {
     private $data;
+
+    /**
+     * Model constructor.
+     * @param array $data
+     */
+    public function __construct(array $data)
+    {
+        foreach ($data as $key => $value) {
+            $this->data[$key] = $value;
+        }
+    }
 
     /**
      * @param string $key
